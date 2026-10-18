@@ -1,0 +1,48 @@
+/* Digital Wallet & Payment System - Base Stylesheet
+   Strict Palette: Obsidian, Slate, Alabaster, Emerald (#10B981), Amber (#F59E0B), Coral (#EF4444)
+   Zero Blue, Zero Maroon, Zero Navy, Zero Purple.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a, a:visited, a:hover, a:active {
+    color: #10B981 !important;
+    text-decoration: none !important;
+}
+
+/* Global Button Visibility Lock */
+.stButton > button,
+.stDownloadButton > button,
+[data-testid="stFormSubmitButton"] > button {
+    background-color: #1E293B !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    border: 1.5px solid #334155 !important;
+    border-radius: 9px !important;
+    font-weight: 700 !important;
+}
+
+.stButton > button *,
+.stDownloadButton > button *,
+[data-testid="stFormSubmitButton"] > button * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover,
+[data-testid="stFormSubmitButton"] > button:hover {
+    background-color: #0F172A !important;
+    border-color: #10B981 !important;
+    color: #34D399 !important;
+}
+
+.stButton > button:hover *,
+.stDownloadButton > button:hover *,
+[data-testid="stFormSubmitButton"] > button:hover * {
+    color: #34D399 !important;
+    fill: #34D399 !important;
+}
